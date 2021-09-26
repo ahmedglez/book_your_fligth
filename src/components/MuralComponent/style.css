@@ -1,0 +1,14 @@
+.mural{
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    background-image: url("/src/sources/mural.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-bottom-left-radius: 70% 60%;
+	border-bottom-right-radius: 70% 60%;
+    
+}
+
