@@ -1,0 +1,44 @@
+
+
+
+
+
+
+.btn{     
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+    cursor: pointer;
+    background: #ecf0f159;
+    color: #2c3e50;
+    border: none;
+    border-bottom: 4px solid #c4c6c7;
+    border-radius: 8px;
+    margin-top: 1px;
+   
+    font-weight: bold;
+    font-size: 1.02rem;  
+    transition: .5s;
+    outline: none;
+  }
+
+  .btn:hover {
+    color: #ecf0f1;
+    background: #088090;
+    border-bottom: 4px solid #088090;
+  }
+  
+  .btn:active {
+    transform: scale(.95);
+    
+  }
+
+  button{
+    
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+
+ 

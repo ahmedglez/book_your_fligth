@@ -9,7 +9,7 @@ function RadioButtonMenuFligths(){
         <React.Fragment>
             
             <div className="RadioButtonItem-container"></div>
-            <input type="radio" id="round_trip" name="rb" value="Round trip" />
+            <input type="radio" id="round_trip" name="rb" value="Round trip"  />
             <label htmlFor="round_trip">Round trip</label>
             <input type="radio" id="one_way" name="rb" value="One way"/>
             <label htmlFor="one_way">One way</label>

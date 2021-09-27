@@ -1,0 +1,11 @@
+.passenger-container{
+    z-index: 7000;
+    width: fit-content;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -50px;
+}
