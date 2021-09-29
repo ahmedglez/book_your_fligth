@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./style.css"
 
 
@@ -23,7 +23,7 @@ const showModal = () => {
   return (
         <React.Fragment>
           <div className="btn" onClick={showModal}>
-            <button> ▼+ </button>
+            <button><span className="flecha-abajo"> ▼+ </span></button>
             <span >passengers:{props.total}   -  price:{props.price}$</span>
           </div>
          

@@ -6,26 +6,36 @@
 
 .btn{     
   width: fit-content;
-  height: fit-content;
-  position: relative;
+  height: 50px;
+  position: relative;  
     cursor: pointer;
-    background: #ecf0f159;
-    color: #2c3e50;
+    background: #bd797471;
+    color: #000000;
     border: none;
-    border-bottom: 4px solid #c4c6c7;
+    border-bottom: 4px solid #4e4e4e9a;
     border-radius: 8px;
     margin-top: 1px;
    
     font-weight: bold;
     font-size: 1.02rem;  
-    transition: .5s;
+    transition-duration: 250ms;
     outline: none;
+  }
+
+  .btn span{
+    text-align: center;
+  font-size: 1.2rem;
+  transition-duration: 250ms;
   }
 
   .btn:hover {
     color: #ecf0f1;
-    background: #088090;
-    border-bottom: 4px solid #088090;
+    background: #bd7974de;
+    border-bottom: 4px solid #bd7974de;
+  }
+  .btn:hover .flecha-abajo{
+    
+    font-size: 32px;
   }
   
   .btn:active {

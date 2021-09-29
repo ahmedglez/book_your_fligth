@@ -1,6 +1,6 @@
 
 import {MuralComponent} from "./components/MuralComponent"
-import {TitleComponent} from "./components/TitleComponent"
+
 import {OptionsBoardComponent} from "./components/OptionsBoardComponent"
 import React from 'react';
 import './App.css';
@@ -15,7 +15,7 @@ function App() {
   const data = [
     {
       name:"Adults",
-      cant:0
+      cant:1
     },
     {
       name:"Teenagers",
@@ -31,9 +31,11 @@ function App() {
     }
 ]
   const [mydata, setData] = React.useState(data);   
-  const [total,setTotal] = React.useState(0);
-  const [price,setPrice] = React.useState(0);
+  const [total,setTotal] = React.useState(1);
+  const [price,setPrice] = React.useState(150);
+  const [multidestination, setMultidestination] = React.useState(false);
   
+
  
   
   return (
@@ -41,9 +43,10 @@ function App() {
 
       
            
-      <MuralComponent openModal={openModal} setOpenModal={setOpenModal}/>             
+      <MuralComponent openModal={openModal} setOpenModal={setOpenModal} total={total}/>             
      
-      <OptionsBoardComponent openModal={openModal} setOpenModal={setOpenModal} total={total} setTotal={setTotal} price={price} setPrice={setPrice}/>
+      <OptionsBoardComponent openModal={openModal} setOpenModal={setOpenModal} total={total} setTotal={setTotal} price={price} setPrice={setPrice} multidestination={multidestination} setMultidestination={setMultidestination}/>      
+      
 
       {!!openModal &&
       <Modal mydata={mydata} setData={setData} total={total} setTotal={setTotal} price={price} setPrice={setPrice}/>     

@@ -12,7 +12,10 @@ const[value2, setValue2] = React.useState(value);
 
 
     const restar_cant = () =>{
-        if(total>0 ){
+        if(total===1 && value.name==="Adults"){
+           
+        }else{
+        if(total>0 && value2.cant>0){
         let newValue = value2;
         newValue.cant-=1;
         setValue2(newValue);
@@ -30,6 +33,8 @@ const[value2, setValue2] = React.useState(value);
                 break;
         }
     }
+}
+
     }
 
     const sumar_cant = () => {

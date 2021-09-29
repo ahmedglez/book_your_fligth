@@ -2,11 +2,14 @@
 import React from "react";
 import './style.css'
 
-function TitleComponent({openModal, setOpenModal}){
+function TitleComponent({openModal, setOpenModal, total}){
    
   let text ="we will help you find the right flight"
   if(openModal){
      text="please select the type of passenger to board"   
+  }
+  if(total===10){
+      text="sorry, the maximum number of passengers allowed is 10 :("
   }
 
   const desactivarModal = () =>{
