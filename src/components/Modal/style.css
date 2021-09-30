@@ -1,5 +1,6 @@
 .ModalBackground {
     width: 40%;
+    min-width: 500px;
     height: 60%;
     margin: 0 auto;
     margin-top: 210px;

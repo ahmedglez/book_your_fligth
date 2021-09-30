@@ -15,11 +15,26 @@
     border-bottom: 4px solid #4e4e4e9a;
     border-radius: 8px;
     margin-top: 1px;
+    margin-right: 5px;
    
     font-weight: bold;
-    font-size: 1.02rem;  
+    font-size: 0.6rem;  
     transition-duration: 250ms;
     outline: none;
+  }
+
+  @media only screen and (max-width: 1228px) {
+  .btn{
+    width: fit-content;
+  }
+  }
+
+
+  @media only screen and (max-width: 878px){
+    .btn{
+      margin-right: auto;
+      margin-top: 100px;
+    }
   }
 
   .btn span{

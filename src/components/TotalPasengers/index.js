@@ -8,6 +8,7 @@ const TotalPassengers = (props) => {
   
  
 const showModal = () => {
+  debugger
   if(props.openModal ===true){
     props.setOpenModal(false)
   }else{
@@ -23,7 +24,7 @@ const showModal = () => {
   return (
         <React.Fragment>
           <div className="btn" onClick={showModal}>
-            <button><span className="flecha-abajo"> ▼+ </span></button>
+            <button><span></span></button>
             <span >passengers:{props.total}   -  price:{props.price}$</span>
           </div>
          

@@ -1,0 +1,66 @@
+
+
+.btn2{     
+    width: fit-content;
+    height: 100%;
+    position: relative;  
+      cursor: pointer;
+      background: #bd797471;
+      color: #000000;
+      border: none;
+      border-bottom: 4px solid #4e4e4e9a;
+      border-radius: 8px;
+      margin-top: 1px;
+     
+      font-weight: bold;
+      font-size: 0.6rem;  
+      transition-duration: 250ms;
+      outline: none;
+    }
+  
+    
+  
+    .btn2 span{
+      text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition-duration: 250ms;
+    text-align: center;
+    }
+    @media only screen and (max-width: 998px){
+        .btn2 span{
+            font-size: 1.1rem;
+        }
+    } 
+    
+  
+    .btn2:hover {
+      color: #ecf0f1;
+      background: #bd7974de;
+      border-bottom: 4px solid #bd7974de;
+    }
+    .btn2:hover .miflecha{
+      
+      font-size: 1.3rem;
+      margin-left: 5px;
+    }
+    
+    .btn2:active {
+      transform: scale(.95);
+      
+    }
+  
+    button{
+      
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+  
+    @media only screen and (max-width: 878px){
+        .btn2{
+            width: 300px;
+            margin-left: 110px;
+        }
+    }
+   

@@ -1,25 +1,30 @@
 
 .RadioButtonItem-container{
-    width: 60%;
+    width: fit-content;
     margin-bottom: 20px;
+    background-color: transparent;
 }
 
 
 
 label{   
+  position: relative;
     max-height: 30px;
     z-index: 1500;
     font-weight: bold;
     margin-top: 0px;
     margin-right: 20px;
     cursor: pointer;
+    font-size: 0.9em;
+
 }
 i
   input:focus-within{
     background: rgba(#088090);
   }
   input{
-    vertical-align: middle;
+    position: relative;
+    
     margin-top: 7px;
     z-index: 1500;
     width: 20px;
@@ -36,7 +41,57 @@ i
     transition: box-shadow 150ms cubic-bezier(.95,.15,.5,1.25);
     
   }
-  
+
+  @media only screen and (max-width: 1228px) {
+    label{
+      width: 250px;
+      font-size: 1.2rem;
+    }
+  }
+  @media only screen and (max-width: 1041px) {
+    label{
+      font-size: 0.9em;
+      margin-right: 5px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 878px) {
+    .RadioButtonItem-container{
+      margin-top: 15px;
+      width: fit-content;
+  }
+  label{
+    position: relative;
+    max-height: 30px;
+    z-index: 1500;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+
+  input{
+    position: relative;
+    
+    margin-top: 7px;
+    z-index: 1500;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: none;
+    border: 0;
+   
+    box-shadow: inset 0 0 0 1.5px ;
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
+    
+    transition: box-shadow 150ms cubic-bezier(.95,.15,.5,1.25);
+    
+  }
+}
     input:focus{
       outline: none;
     }

@@ -2,11 +2,14 @@ import React from "react";
 import {TitleComponent} from "../TitleComponent"
 import './style.css'
 
-function MuralComponent({openModal, setOpenModal, total}){
+function MuralComponent({openModal, setOpenModal, total, openClassSelection, setOpenClassSelection}){
 
     const desactivarModal = () =>{
         if(openModal){
             setOpenModal(!openModal)
+        }
+        if(openClassSelection){
+            setOpenClassSelection(false)
         }
     }
 

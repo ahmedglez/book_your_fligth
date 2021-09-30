@@ -1,11 +1,13 @@
 .App {
   text-align: center;
-  overflow: hidden;
+  overflow: auto;
 }
 body{
-  overflow: hidden;
+  overflow: auto;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -38,5 +40,12 @@ body{
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 878px){
+  body{
+    overflow-y: auto;
   }
 }
