@@ -14,7 +14,7 @@ function OriginDestinationContainer({airports, abrvs, index1, index2}){
                          <h4>{airports[index1]}({abrvs[index1]})</h4>
                      </div>
                      <div className="change-container">
-                     <button>Cambiar Ciudad <span>▼</span></button>                        
+                     <button>Change Origin<span>▼</span></button>                        
                      </div>
                  </div>
                  
@@ -26,7 +26,7 @@ function OriginDestinationContainer({airports, abrvs, index1, index2}){
                          <h4>{airports[index2]}({abrvs[index2]})</h4>
                      </div>
                      <div className="change-container">
-                     <button>Cambiar Ciudad <span>▼</span></button>                     
+                     <button>Change Destination <span>▼</span></button>                     
                      </div>
                  </div>
             </div>

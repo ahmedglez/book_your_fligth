@@ -79,7 +79,7 @@ function OptionsBoardComponent({openModal, setOpenModal, total, setTotal, price,
             </div>
 
             <div className="button-container">
-                <button><p>Buscar Vuelo</p></button>
+                <button><p>Search Flights</p></button>
                 <span></span>
             </div>
 
